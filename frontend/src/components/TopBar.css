@@ -1,0 +1,28 @@
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: #1976d2;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    border-radius: 0 0 12px 12px;
+}
+
+.topbar-welcome {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.topbar-profile {
+    display: flex;
+    align-items: center;
+}
+
+.topbar-profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}

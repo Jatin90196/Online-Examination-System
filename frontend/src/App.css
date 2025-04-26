@@ -1,0 +1,73 @@
+/* Base App Styles */
+.App {
+  text-align: center;
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Logo Animation */
+.App-logo {
+  height: 30vmin;
+  pointer-events: none;
+  margin-bottom: 2rem;
+  filter: drop-shadow(0 0 10px rgba(97, 218, 251, 0.6));
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Header Section */
+.App-header {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Typography */
+.App-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.App-header p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+/* Link Styling */
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: #ffffff;
+}
+
+/* Logo Spin Animation */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
