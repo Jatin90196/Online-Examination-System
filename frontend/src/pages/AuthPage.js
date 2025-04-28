@@ -33,13 +33,11 @@ function AuthPage() {
       const result = await response.json();
       if (response.ok) {
         setMessage(result.message || 'Success!');
-        // Redirect only after login, not registration
         if (formType === 'login') {
           if (role === 'admin') {
-            // If you want to store admin id: localStorage.setItem('adminId', result.id);
+            localStorage.setItem('adminId', result.id);
             navigate('/admin/dashboard');
           } else if (role === 'student') {
-            // Store student id for dashboard fetch
             localStorage.setItem('studentId', result.id);
             navigate('/student/dashboard');
           }
@@ -52,18 +50,10 @@ function AuthPage() {
     }
   };
 
-  // Render the form fields based on role and formType
   const renderFormFields = () => {
     if (!role) return null;
     return (
       <>
-        <input
-          type="text"
-          name="username"
-          placeholder="Username"
-          onChange={handleChange}
-          required
-        />
         {formType === 'register' && (
           <input
             type="text"
@@ -87,7 +77,6 @@ function AuthPage() {
           onChange={handleChange}
           required
         />
-
         {role === 'student' && formType === 'register' && (
           <>
             <input

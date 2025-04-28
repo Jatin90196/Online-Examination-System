@@ -1,7 +1,7 @@
 import React from 'react';
 import './TopBar.css';
 
-function TopBar({studentName, profilePic}) {
+export default function TopBar({studentName, profilePic}) {
 
     return (
         <div className='top-bar'>
@@ -17,4 +17,3 @@ function TopBar({studentName, profilePic}) {
     
 }
 
-export default TopBar;

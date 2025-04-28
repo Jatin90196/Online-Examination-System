@@ -1,6 +1,7 @@
-const express = require('express');
+import express from 'express';
+import studentController from '../controllers/studentController.js';
+
 const router = express.Router();
-const studentController = require('../controllers/studentController');
 
 // Student Registration
 router.post('/register', studentController.register);
@@ -8,7 +9,11 @@ router.post('/register', studentController.register);
 // Student Login
 router.post('/login', studentController.login);
 
+// Get Student Profile
 router.get('/profile/:id', studentController.profile);
 
+// In routes/student.js
+router.get('/', studentController.getAllStudents);
 
-module.exports = router;
+
+export default router;

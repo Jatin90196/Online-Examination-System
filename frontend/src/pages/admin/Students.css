@@ -1,0 +1,108 @@
+/* General container styling */
+div {
+  padding: 32px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Title styling */
+h2 {
+  font-size: 2.2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Loading state styling */
+div > div {
+  font-size: 1.5rem;
+  color: #007BFF;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Table header styling */
+th {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  font-size: 1.1rem;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Table data styling */
+td {
+  padding: 12px;
+  font-size: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: #555;
+}
+
+/* Hover effect on table rows */
+tr:hover td {
+  background-color: #f4f4f4;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Table row border styling */
+tr {
+  transition: all 0.3s ease;
+}
+
+/* Additional table effects */
+td:hover {
+  background-color: #f1f1f1;
+  color: #4CAF50;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+th:hover {
+  background-color: #45a049;
+  cursor: pointer;
+}
+
+/* Adding some padding and spacing for a cleaner look */
+table, th, td {
+  border-radius: 8px;
+  border: none;
+}
+
+table {
+  margin-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+}

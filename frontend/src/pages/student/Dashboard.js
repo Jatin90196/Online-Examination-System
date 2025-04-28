@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import TopBar from '../../components/TopBar';
 import Sidebar from '../../components/Sidebar';
 import ProfileCard from '../../components/ProfileCard';
+import './Dashboard.css';
 
 function StudentDashboard() {
   const [profile, setProfile] = useState(null);
