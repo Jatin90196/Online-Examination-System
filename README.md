@@ -1,43 +1,37 @@
-Online Examination System
+# Online Examination System
+
 A web application for conducting and managing online exams, built with React, Node.js, Express, and MySQL.
 
-Features
-Admin and student authentication
+## Features
 
-Admin dashboard for managing students and creating exams (MCQ & subjective)
+- Admin and student authentication
+- Admin dashboard for managing students and creating exams (MCQ & subjective)
+- Student dashboard for viewing profile and attempting exams
+- Auto-grading for MCQs, manual grading for subjective questions
+- Responsive and clean user interface
 
-Student dashboard for viewing profile and attempting exams
+## Tech Stack
 
-Auto-grading for MCQs, manual grading for subjective questions
+- React (frontend)
+- Node.js + Express (backend)
+- MySQL (database)
+- CSS (styling)
 
-Responsive and clean user interface
+## Getting Started
 
-Tech Stack
-React (frontend)
+1. Clone the repository.
+2. Set up the MySQL database and environment variables.
+3. Install dependencies for both frontend and backend.
+4. Run the backend and frontend servers.
+5. Access the app at http://localhost:3000.
 
-Node.js + Express (backend)
+## Project Structure
 
-MySQL (database)
+- `backend/` - Express API, database models, controllers
+- `frontend/` - React app, pages, components
 
-CSS (styling)
+## License
 
-Getting Started
-Clone the repository.
-
-Set up the MySQL database and environment variables.
-
-Install dependencies for both frontend and backend.
-
-Run the backend and frontend servers.
-
-Access the app at http://localhost:3000.
-
-Project Structure
-backend/ - Express API, database models, controllers
-
-frontend/ - React app, pages, components
-
-License
 Open source - use and modify as you wish!
 
 For questions or support, open an issue on GitHub.
